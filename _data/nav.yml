@@ -1,11 +1,11 @@
 - title: Home
-  URL: /
+  url: /
   
 - title: Our Team
-  URL: /Pages/Team
+  url: /Pages/Team
   
 - title: Exploring NIF
-  URL: /NIF
+  url: /NIF
   
 - title: Prototyping
-  URL: /Prototype
+  url: /Prototype
