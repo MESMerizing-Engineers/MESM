@@ -30,8 +30,13 @@
       {% endif %}
       
       {% for link in site.data.nav %}
-        assign domain = site.github.url 
-        <a href="{{domain}}{{link.url}}" class="btn">{{ link.Title }}</a>
+           {% if link.url contains 'http' %}
+              {% assign domain = '' %}
+              {% else %}
+              {% assign domain = site.github.url %}
+           {% endif %}
+      
+        <a href="{{ domain }}{{ link.url }}" class="btn">{{ link.Title }}</a>
       {% endfor %}
       
     </header>
